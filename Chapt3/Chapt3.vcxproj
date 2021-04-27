@@ -140,6 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="03-1.c" />
+    <ClCompile Include="03-10.c" />
+    <ClCompile Include="03-11.c" />
+    <ClCompile Include="03-12.c" />
     <ClCompile Include="03-2.c" />
     <ClCompile Include="03-3.c" />
     <ClCompile Include="03-4.c" />
@@ -147,6 +150,7 @@
     <ClCompile Include="03-6.c" />
     <ClCompile Include="03-7.c" />
     <ClCompile Include="03-8.c" />
+    <ClCompile Include="03-9.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
