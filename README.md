@@ -230,3 +230,88 @@ int main()
 }   
 ```
 
+4. 실수 자료형   
+	1. float       (유효숫자 7)   
+	2. double      (15)
+	3. long double (15이상)   
+
+ * 정수형을 기본으로 사용, 실수형은 꼭 필요한 경우만 사용   
+ * 실수형 유효숫자가 많은 double형을 기본으로 사용   
+
+```   
+#include <stdio.h>
+
+int main()
+{
+	float ft = 1.234567890123456789; // 유효 숫자가 많은 값으로 초기화
+	double db = 1.234567890123456789;
+
+	printf("float형 변수의 값 : %.20f\n", ft);
+	printf("double형 변수의 값 : %.20f\n", db);
+
+	return 0;
+}   
+```   
+
+5. 문자열 저장   
+
+```  
+char 배열명[문자열 길이 +1] = 문자열;   
+```   
+
+ * 배열   
+ 	* 배열 Array = 주소   
+ 	* 배열 이름 = 상수 ⇒ 대입 연산자 불가능   
+
+ * strcpy (string copy)   
+ 	* char 배열 초기화 이외에 문자열 저장할 때 사용하는 함수   
+
+ * char배열은 문자열을 저장하는 변수의 역할, **%s**로 출력함
+
+```java   
+// char 배열에 문자 복사 strcpy 
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char fruit[20] = "strawberry"; //strawberry 초기화
+
+	printf("%s\n", fruit);        //strawberry 출력
+	strcpy(fruit, "banana");      // fruit에 banana 복사
+	printf("%s\n", fruit);        // banana 출력
+
+	return 0;
+}    
+```    
+
+6. const를 사용한 변수    
+   * 변수를 상수화(다른 값을 넣을 수 X) 시킬 때 사용   
+   * ※주의 : 반드시 초기화 시켜야 함   
+
+```java   
+#include <stdio.h>
+
+int main() 
+{
+	int income = 0;                          // 소득액 초기화
+	double tax;                              // 세금
+	const double tax_rate = 0.12;            // 세율 초기화
+
+	income = 456;                            // 소득액 저장
+	tax = income * tax_rate;                 // 세금 계산
+	printf("세금은 : %1.lf입니다.\n", tax);  // 계산 출력
+
+	return 0;
+}   
+```   
+
+### 핵심 포인트    
+> 변수 선언으로 메모리에 저장 공간을 확보하며 대입연산자(=)로 변숫 값을 초기화하거나 저장한다. 초기화하지 않으면 쓰레기 값이 들어있다.   
+> Visual Studio는 쓰레기값 컴파일 오류로 출력함   
+> 변수의 형태를 **자료형**이라 하며 기본적으로 정수형과 실수형으로 나눈다.   
+> 변수에 **const**를 사용하면 상수처럼 사용할 수 있다.
+> **예약어**는 컴파일러와 약속된 단어, **식별자**는 사용자가 만들어낸 단어이다.   
+
+
