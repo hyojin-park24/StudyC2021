@@ -188,5 +188,45 @@ int main()
 
 	return 0;
 }
+```    
+
+3. 정수 자료형   
+	1. char      = 1byte   
+	2. short     = 2byte   
+	3. int       = 4byte   
+	4. long      = 4byte   
+	5. long long = 8byte   
+
+```java   
+#include <stdio.h>
+
+int main()
+{
+	char ch1 = 'A'; //문자로 초기화, 저장된 값은 문자의 아스키 코드 값
+	char ch2 = 65;  // 문자 'A'의 아스키 코드 값에 해당하는 정수로 초기화
+
+	printf("문자 %c의 아스키 코드 값 : %d\n", ch1, ch1);
+	printf("아스키 코드 값이 %d인 문자 : %c\n", ch2, ch2);
+
+	return 0;
+}   
 ```   
+```java   
+#include <stdio.h>
+
+int main()
+{
+	short sh = 32767;
+	int in = 2147483647;
+	long ln = 2147483647;
+	long long lln = 123451234512345;
+
+	printf("short형 변수 출력 : %d\n", sh);
+	printf("int형 변수 출력 : %d\n", in);
+	printf("long형 변수 출력 : %ld\n", ln);
+	printf("long long형 변수 출력 : %lld\n", lln);
+
+	return 0;
+}   
+```
 
