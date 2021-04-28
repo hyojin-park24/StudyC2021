@@ -379,5 +379,100 @@ int main()
 
 	return 0;
 }   
+``` 
+
+## 04 연산자   
+1. 산술 연산자 ( +, -, * , /)   
+2. 관계 연산자 (크다, 작다)   
+3. 논리 연산자 ( 참, 거짓)   
+
+### 1. 산술 연산자   
+
+* 덧셈, 뺄셈, 곱셈, 음수 연산
+```java   
+// 대입, 덧셈, 뺄셈, 곱셈, 음수 연산 
+#include <stdio.h>
+
+int main()
+{
+	int a, b;
+	int sum, sub, mul, inv;
+
+	a = 10;					// 대입 연산(=)
+	b = 20;					// 대입 연산(=)
+	sum = a + b;			        // 더하기 연산(+) 후 대입 연산 (=)
+	sub = a - b;			        // 빼기 연산(-) 후 대입 연산 (=)
+	mul = a * b;				// 곱하기 연산(*) 후 대입 연산 (=) 
+	inv = -a;				// 음수 연산 (-) 후 대입 연산 (=)
+
+	printf("a의 값 : %d, b의 값 : %d\n", a, b);
+	printf("덧셈 : %d\n", sum);
+	printf("뺄셈 : %d\n", sub);
+	printf("곱셈 : %d\n", mul);
+	printf("a의 음수 연산 : %d\n", inv);
+
+
+	return 0;
+}   
 ```   
+
+* 나누기 연산자와 나머지 연산자   
+
+```java   
+// 몫과 나머지를 구하는 연산 
+
+#include <stdio.h>
+
+int main()
+{
+	double apple;				// 실수
+
+	int banana;				// 정수
+	int orange;				// 정수
+
+	apple = 4 / 2;				// 실수와 실수의 나누기 연산
+	banana = 5 / 2;				// 정수와 정수의 나누기 연산
+	orange = 5 % 2;				// 정수와 정수의 나머지 연산(%)
+
+						//실수는 나머지 연산(%)할 수 없다
+
+	printf("apple : %.1lf\n", apple);
+	printf("banana : %d\n", banana);
+	printf("orange : %d\n", orange);
+
+	return 0;
+}   
+```   
+
+* 증감 연산자   
+	* 전위 표기 
+	* 후위 표기   
+
+```
+a =1 ,
+
+b = a ++  ⇒ a값이 먼저 b로 저장 후 증감 ∴ b = 1 
+c = ++a   ⇒ 증감 후 a값 저장 		 ∴ b = 2   
+```   
+
+```java
+#include <stdio.h>
+
+int main()
+{
+	int a = 10, b = 10;
+
+	++a;				// 변수의 값을 1만큼 증가
+	--b;				// 변수의 값을 1만큼 감소
+        c++;				// 대입 연산 없을 때는 자체적으로 연산 이루어짐 결과값 : 11
+        d--;                		// 마찬가지로 자체적으로 연산 이루어짐 결과값 : 9
+
+	printf("a : %d\n", a);
+	printf("b : %d\n", b);
+
+
+	return 0;
+}   
+```
+
 
