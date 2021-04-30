@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{45bf3c1a-93b7-459f-a69e-b0661479e35b}</ProjectGuid>
-    <RootNamespace>Chart8</RootNamespace>
+    <ProjectGuid>{1716812b-feb7-438d-a8fa-23659772c456}</ProjectGuid>
+    <RootNamespace>Chart9</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="08-1.c" />
-    <ClCompile Include="08-2.C" />
-    <ClCompile Include="08-3.c" />
-    <ClCompile Include="08-4.c" />
-    <ClCompile Include="08-5.c" />
-    <ClCompile Include="08-6.c" />
-    <ClCompile Include="08-7.c" />
-    <ClCompile Include="array.c" />
+    <ClCompile Include="09-1.c" />
+    <ClCompile Include="09-2.cpp" />
+    <ClCompile Include="09-3.c" />
+    <ClCompile Include="09-4.c" />
+    <ClCompile Include="09-5.c" />
+    <ClCompile Include="09-6.c" />
+    <ClCompile Include="09-7-1.c" />
+    <ClCompile Include="09-7.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
