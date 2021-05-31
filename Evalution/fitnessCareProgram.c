@@ -5,7 +5,9 @@
 출력
 총 회원 수, 평균 체중, 최고 체중을 갖는 회원의 정보 출력
 */
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <string.h>
 
 typedef struct {
 	int num;
